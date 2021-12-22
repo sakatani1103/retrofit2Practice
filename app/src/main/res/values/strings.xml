@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Retrofit2Practice</string>
+    <string name="fab_title">お気に入りの写真</string>
+    <string name="image_frag">お気に入りの写真を選択する</string>
+    <string name="search_keyword">キーワード</string>
+    <string name="search_image_btn">キーワードで画像を追加する</string>
+    <string name="dialog_message">検索する写真のキーワードを入力したください。</string>
+    <string name="delete_btn">削除</string>
+    <string name="add_btn">追加</string>
+    <string name="initial_message">写真が登録されていません。\n写真を追加してください。</string>
+    <string name="dialog_save">保存</string>
+    <string name="dialog_cancel">キャンセル</string>
+    <string name="dialog_ok">はい</string>
+    <string name="keyword_tv">検索キーワード : %s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/favoriteFragment">
+
+    <fragment
+        android:id="@+id/imagePickFragment"
+        android:name="com.example.retrofit2practice.imagePick.ImagePickFragment"
+        android:label="@string/image_frag">
+        <argument
+            android:name="keyword"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/favoriteFragment"
+        android:name="com.example.retrofit2practice.favorite.FavoriteFragment"
+        android:label="@string/fab_title"
+        tools:layout="@layout/fragment_favorite">
+        <action
+            android:id="@+id/action_favoriteFragment_to_imagePickFragment"
+            app:destination="@id/imagePickFragment" />
+    </fragment>
+</navigation>

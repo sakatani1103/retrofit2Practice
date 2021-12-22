@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="image"
+            type="com.example.retrofit2practice.data.remote.ImageResult" />
+        <variable
+            name="listener"
+            type="com.example.retrofit2practice.imagePick.ImagePickListener" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="@{() -> listener.onClick(image)}">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            app:imageUrl="@{image.webformatURL}" />
+
+    </FrameLayout>
+</layout>
